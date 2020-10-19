@@ -14,11 +14,17 @@ citem = input("How much did the item cost?: ")
 # First Draft
 mg = float(moneygiven)
 ci = float(citem)
+change = mg - ci
 
-qmb = mg - ci/25
-dmb = qmb/10
-nmb = dmb/5
-pmb = nmb/1
+qmb = int(change/.25)
+change = change - qmb*.25
+dmb = int(change/.10)
+change = change - dmb*.10
+nmb = int(change/.5)
+change = change - nmb*.5
+pmb = int(change/.01)
+change = change - pmb*.01
+
 
 
 print("You need {0} quarters, {1} dimes, {2} nickels, {3} pennies.".format(qmb, dmb, nmb, pmb))
