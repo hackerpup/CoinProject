@@ -20,6 +20,8 @@ qmb = int(change/.25)
 change = change - qmb*.25
 dmb = int(change/.10)
 change = change - dmb*.10
+#Check the below line, how much is a nickel worth? 
+#Until that is fixed this is fixed the rest of the code won't work properly
 nmb = int(change/.5)
 change = change - nmb*.5
 pmb = int(change/.01)
